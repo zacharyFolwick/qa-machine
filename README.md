@@ -1,2 +1,2 @@
 # qa-machine
-setup scripts for emulating qa-ci
+setup scripts for prepping qa-ci
