@@ -72,5 +72,11 @@ wget -q https://github.com/aerokube/cm/releases/download/${selenoid_version}/cm_
 chmod +x cm_linux_amd64
 ./cm_linux_amd64 selenoid start --browsers "chrome:${chrome_version}"
 
+cat <<EOF >> /etc/hosts
+10.10.53.181	cookie-service-qa.ci.services.revdevs.internal
+10.10.80.163	cookie-service-qa.ci.services.revdevs.internal
+10.10.185.76	cookie-service-qa.ci.services.revdevs.internal
+EOF
+
 #
 echo completed updates and installs
